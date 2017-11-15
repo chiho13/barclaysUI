@@ -1,6 +1,6 @@
 ### Barclays UI
 
-####run
+#### Run
 
-> npm install
-> gulp serve
+```npm install```
+```gulp serve```
