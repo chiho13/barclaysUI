@@ -1,0 +1,152 @@
+// bower:scss
+// endbower
+$small_breakpoint: 900px;
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  margin: 50px auto 0 auto;
+  max-width: 1000px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  h1 {
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p, ul {
+  font-size: 16px;
+  margin: 0;
+  }
+
+  .wrap {
+  padding: 10px;
+  }
+
+   @media (min-width: $small_breakpoint) {
+      padding: 50px;
+   }
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+}
+
+select {
+  display: block;
+  flex-basis: 50%;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  height: 44px;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: .25rem;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+
+.threeItem {
+  margin-top: 40px;
+}
+
+
+.threeItemContainer {
+  max-width: 400px;
+  margin: 0 auto;
+
+  @media (min-width: $small_breakpoint) {
+     max-width: 100%;
+    display: flex;
+  }
+}
+
+.threeItem_link {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.threeItem_image {
+display: flex;
+  width: 100%
+}
+
+.threeItem_item {
+  display: flex;
+  flex-basis: 33%;
+  flex-grow: 1;
+}
+
+.threeItem_itemTitle {
+  font-size: 26px;
+   color: #3175B1;
+   font-weight: 300;
+}
+
+.threeItem_itemCTAText,
+.threeItem_itemCTATextSolid {
+  background-color: #3175B1;
+  border: 1.25px solid #3175B1;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #fff;
+  line-height: 1.6;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color .2s;
+  padding: 6px 25px;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: auto;
+  border-radius: 50px;
+  align-self: flex-start;
+}
+
+.threeItem_itemCTAText {
+    background-color: #fff;
+    color: #3175B1;
+}
+
+.threeItem_textContainer {
+  background-color: #eee;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  min-height: 250px;
+}
